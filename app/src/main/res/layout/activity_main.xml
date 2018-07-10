@@ -1,0 +1,111 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/artists_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:background="#E0F7FA"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:src="@drawable/artists_icon"
+                 />
+
+            <TextView
+                android:id="@+id/artists_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alternative Rock"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/songs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:background="#B2EBF2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:src="@drawable/songs_icon"/>
+
+            <TextView
+                android:id="@+id/songs_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hip Hop"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:paddingLeft="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/now_playing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:background="#80DEEA"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:src="@drawable/now_playing_icon"/>
+
+            <TextView
+                android:id="@+id/now_playing_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now Playing"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:paddingLeft="15dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
